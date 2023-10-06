@@ -12,9 +12,9 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar bg-body-tertiary navbar-expand-lg fixed-top">
+    <nav className={`navbar bg-body-tertiary navbar-expand-lg fixed-top ${isNavOpen ? 'mobile-navbar' : ''}`}>
       <div className="container-fluid d-flex justify-content-between align-items-center">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <img src="./logos/logoLinealLetraNegra.png" alt="Logo" width="80" className="d-inline-block align-text-top" />
         </a>
         <button
@@ -32,19 +32,19 @@ function Navbar() {
         <div className={`collapse navbar-collapse justify-content-center ${isNavOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a href="#novedades" className="nav-link" onClick={closeNav}>
+              <button className="nav-link" onClick={closeNav}>
                 Novedades
-              </a>
+              </button>
             </li>
             <li className="nav-item">
-              <a href="#videos" className="nav-link" onClick={closeNav}>
+              <button className="nav-link" onClick={closeNav}>
                 Videos
-              </a>
+              </button>
             </li>
             <li className="nav-item">
-              <a href="#spotify" className="nav-link" onClick={closeNav}>
+              <button className="nav-link" onClick={closeNav}>
                 Spotify
-              </a>
+              </button>
             </li>
           </ul>
         </div>

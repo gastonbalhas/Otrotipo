@@ -2,11 +2,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-bootstrap';
 import Navbar from './Navbar';
 
-
 function Header() {
   return (
     <div>
-      <Navbar />
+      <div className="d-lg-block d-md-none"> {/* Oculta Navbar en pantallas medianas y pequeñas */}
+        <Navbar />
+      </div>
       <Carousel>
         <Carousel.Item>
           <img src="./img/mono1.jpg" className="d-block w-100" alt="Imagen 1" />
