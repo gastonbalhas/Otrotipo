@@ -11,6 +11,14 @@ function Navbar() {
     setIsNavOpen(false);
   };
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      closeNav();
+    }
+  };
+
   return (
     <nav className={`navbar bg-body-tertiary navbar-expand-lg fixed-top ${isNavOpen ? 'mobile-navbar' : ''}`}>
       <div className="container-fluid d-flex justify-content-between align-items-center">
@@ -32,17 +40,17 @@ function Navbar() {
         <div className={`collapse navbar-collapse justify-content-center ${isNavOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <button className="nav-link" onClick={closeNav}>
+              <button className="nav-link" onClick={() => scrollToSection('novedades')}>
                 Novedades
               </button>
             </li>
             <li className="nav-item">
-              <button className="nav-link" onClick={closeNav}>
+              <button className="nav-link" onClick={() => scrollToSection('videos')}>
                 Videos
               </button>
             </li>
             <li className="nav-item">
-              <button className="nav-link" onClick={closeNav}>
+              <button className="nav-link" onClick={() => scrollToSection('spotify')}>
                 Spotify
               </button>
             </li>
