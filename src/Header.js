@@ -10,10 +10,10 @@ function Header() {
       </div>
       <Carousel>
         <Carousel.Item>
-          <img src="./img/mono1.jpg" className="d-block w-100" alt="Imagen 1" />
+          <img src="./img/renzo1.jpg" className="d-block w-100" alt="Imagen 1" />
         </Carousel.Item>
         <Carousel.Item>
-          <img src="./img/renzo1.jpg" className="d-block w-100" alt="Imagen 2" />
+          <img src="./img/mono1.jpg" className="d-block w-100" alt="Imagen 2" />
         </Carousel.Item>
         <Carousel.Item>
           <img src="./img/vivoGral2.jpg" className="d-block w-100" alt="Imagen 3" />
