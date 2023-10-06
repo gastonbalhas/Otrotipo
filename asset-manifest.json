@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/%7BOtrotipo%7D/static/css/main.6ccd65a8.css",
+    "main.js": "/%7BOtrotipo%7D/static/js/main.b3eaadca.js",
+    "index.html": "/%7BOtrotipo%7D/index.html",
+    "main.6ccd65a8.css.map": "/%7BOtrotipo%7D/static/css/main.6ccd65a8.css.map",
+    "main.b3eaadca.js.map": "/%7BOtrotipo%7D/static/js/main.b3eaadca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ccd65a8.css",
+    "static/js/main.b3eaadca.js"
+  ]
+}
