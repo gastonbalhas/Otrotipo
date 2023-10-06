@@ -3,6 +3,7 @@ import Header from './Header';
 import Novedades from './Novedades.js';
 import Videos from './Videos'; 
 import Spotify from './Spotify';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Novedades />
       <Videos />
       <Spotify />
+      <Footer />
     </div>
   );
 }
