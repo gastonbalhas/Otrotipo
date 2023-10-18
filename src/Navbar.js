@@ -21,22 +21,24 @@ function Navbar() {
 
   return (
     <nav className={`navbar bg-body-tertiary navbar-expand-lg fixed-top ${isNavOpen ? 'mobile-navbar' : ''}`}>
-      <div className="container-fluid d-flex justify-content-between align-items-center">
+      <div className="container mx-auto flex justify-between items-center">
         <a className="navbar-brand" href="/">
           <img src="./logos/logoLinealLetraNegra.png" alt="Logo" width="80" className="d-inline-block align-text-top" />
         </a>
-        <button
-          className={`navbar-toggler ${isNavOpen ? 'collapsed' : ''}`}
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded={isNavOpen ? 'true' : 'false'}
-          aria-label="Toggle navigation"
-          onClick={toggleNav}
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+        <div className="ml-auto"> {/* Utiliza la clase ml-auto de Tailwind para alinear a la derecha */}
+          <button
+            className={`navbar-toggler ${isNavOpen ? 'collapsed' : ''}`}
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded={isNavOpen ? 'true' : 'false'}
+            aria-label="Toggle navigation"
+            onClick={toggleNav}
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+        </div>
         <div className={`collapse navbar-collapse justify-content-center ${isNavOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
